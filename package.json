@@ -1,0 +1,33 @@
+{
+  "name": "familytreebackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mahendra_gts@bitbucket.org/mahendra_gts/familytreebackend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mahendra_gts/familytreebackend#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "aws-sdk": "^2.919.0",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "firebase-admin": "^9.6.0",
+    "jpeg-autorotate": "^7.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "pg": "^8.6.0",
+    "razorpay": "^2.0.6",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.1"
+  }
+}
