@@ -131,11 +131,26 @@ let userService = {
         return new Promise((resolve, reject) => {
             try {
 
-                let dt = new Date(req.body.startDate)
-                let dt1 = new Date(req.body.endDate)
+                var dt = '0'
+                var dt1 = '0'
 
-                let startDate = dt.getDate + "-" + dt.getMonth + "-" + dt.getFullYear
-                let endDate = dt1.getDate + "-" + dt1.getMonth + "-" + dt1.getFullYear
+                if (req.body.startDate != 0){
+                    dt = new Date(req.body.startDate)
+                    var startDate = dt.getDate() + "-" + dt.getMonth() + "-" + dt.getFullYear()
+                }
+                else{
+                    startDate = '0'
+                }
+
+                if (req.body.endDate != 0){
+                    dt1 = new Date(req.body.endDate)
+                    var endDate = dt1.getDate() + "-" + dt1.getMonth() + "-" + dt1.getFullYear()
+                }
+                else{
+                    endDate='0'
+                }
+
+
 
                 database.executeQuery(storeProcedure.GetEmployeeByDepartment,
                     [req.body.departmentId,
