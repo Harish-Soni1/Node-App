@@ -18,7 +18,7 @@ app.use("*", function (req, res, next) {
     res.send("API Not Found");
 });
 
-app.listen(config.PORT, function () {
+app.listen(process.env.PORT || config.PORT, function () {
     console.log("Node RESTful API server started on " + config.PORT);
 })
 
