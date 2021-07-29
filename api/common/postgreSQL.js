@@ -7,7 +7,10 @@ var connection = new postgreSQL({
     password: config.DB_PASSWORD,
     database: config.DB,
     port: 5432,
-    charset: 'utf8mb4'
+    charset: 'utf8mb4',
+    ssl: {
+        rejectUnauthorized: false
+    }
 }, { multipleStatements: true });
 
 connection.connect(function (err) {
