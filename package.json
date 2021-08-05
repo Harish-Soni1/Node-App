@@ -1,5 +1,5 @@
 {
-  "name": "familytreebackend",
+  "name": "node-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://mahendra_gts@bitbucket.org/mahendra_gts/familytreebackend.git"
+    "url": "git+https://mahendra_gts@bitbucket.org/mahendra_gts/node-app.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/mahendra_gts/familytreebackend#readme",
+  "homepage": "https://bitbucket.org/mahendra_gts/node-app#readme",
   "dependencies": {
     "@sendgrid/mail": "^7.4.2",
     "aws-sdk": "^2.919.0",
